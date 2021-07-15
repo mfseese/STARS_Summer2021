@@ -170,6 +170,10 @@ par(mar=c(0,0,0,0))
 pie(x = b$q[b$q != 0], labels = b$p[b$q != 0], col = clr)
 dev.off()
 
+pdf("plot13.pdf", width = 11, height = 8.5)
+barplot(q, names.arg = p)
+dev.off()
+
 rm(list=ls())
 
 
